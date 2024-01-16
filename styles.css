@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(to right, #2200ff, #1eb1b6), radial-gradient(circle at top left, #4e54c8, #8f94fb);
+
+}
+
+.calculator {
+    text-align: center;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 6, 73, 0.748);
+}
+
+/* Rest of your existing CSS */
+
+
+.display-container {
+    position: relative;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.backspace-btn {
+    position: absolute;
+    top: 42%;
+    right: 5px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #2200ff, #21bdad);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.buttons button:hover {
+    background: linear-gradient(to right, #150080 20%, #3598db 80%);
+}
